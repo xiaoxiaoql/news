@@ -1,0 +1,95 @@
+.xheader{
+	height:50px;
+	background:#4cb134;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	width:100%;
+	color:#fff;
+	background:#eb0618;
+	
+}
+.xheader a{
+	color:#fff;
+	display:inline-block;
+	line-height:50px;
+	height:50px;
+	font-size:24px;
+	font-family: '微软雅黑';
+}
+.xheader .refresh{
+	display: inline-block;
+	
+}
+.xheader .refresh img{
+	width:20px;
+	height:20px;
+}
+.xheader .searchtool{
+		float:right;
+		margin-top:10px;
+		margin-right:10px;
+}
+.xheader .searchtool img{
+	width:30px;
+	height:30px;
+}
+.weui-tabbar{
+		position:fixed;
+		bottom:0px;
+	}
+	.swiper-container {
+	    width: 100%;
+	    height: 100%;
+	}
+	.swiper-slide {
+	    text-align: center;
+	    font-size: 18px;
+	    background: #fff;
+
+	    /* Center slide text vertically */
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    -webkit-justify-content: center;
+	    justify-content: center;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+	}
+	.swiper-container img{
+		width:100%;
+	}
+	.touch_rote{
+		position:absolute;
+		top:30px;
+		z-index: 1000;
+		left:50%;
+	}
+	.touch_rote span{
+		width:30px;
+		height:30px;
+		display: block;
+		margin:0 auto;
+	}
+	.touch_rote span img{
+			width:30px;
+			height:30px;
+	}
+	.touch_rote .rotates{
+		animation:rotate 2s linear infinite;
+	}
+	@keyframes rotate{
+		0%{
+			transform:rotateZ(-360deg);
+
+		}
+		100%{
+			transform:rotateZ(0deg);
+
+		}
+	}

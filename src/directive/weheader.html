@@ -1,0 +1,25 @@
+	<div class='xheader'>
+	<a href="#">新闻资讯</a>
+	<span class="refresh" ng-class='{rotatestop:isrefresh}'><img src="images/top_icon2.png" alt="" ng-click='refresh()'></span>
+	<span class="searchtool" ng-click='search()'><img src="images/top_icon3.png" alt=""></span>
+	</div>
+	<style>
+	.refresh{
+		display:inline-block;
+	}
+	.rotatestop{
+		animation:rotate 2s linear infinite;
+	}
+	@keyframes rotate{
+		0%{
+			transform:rotateZ(-360deg);
+
+		}
+		100%{
+			transform:rotateZ(0deg);
+
+		}
+	}
+	</style>
+	
+

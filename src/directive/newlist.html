@@ -1,0 +1,23 @@
+<div class="weui-panel weui-panel_access" style="margin-top: 0px; margin-bottom: 53px;">
+	<touchrote></touchrote>
+
+	<!-- <div class="weui-panel__hd">title</div> -->
+	<div class="weui-panel__bd">
+	<!-- |orderBy:xnews.day:true -->
+		<a ng-repeat='xnews in newsList|filter:text ' ng-href='{{xnews.long}}' class="weui-media-box weui-media-box_appmsg"  >
+			<div class="weui-media-box__hd" ng-show='{{xnews.image}}'>
+				<img class="weui-media-box__thumb" src='xnews.image' alt="">
+			</div>
+			<div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">{{xnews.title}}</h4>
+				<!-- <p class="weui-media-box__desc">{{xnews.text}}</p> -->
+			</div>
+		</a>
+	</div>
+	<div class="weui-panel__ft">
+		<a href="javascript:void(0);"  class="weui-cell weui-cell_access weui-cell_link" ng-click='moreNews()'>
+			<div class="weui-cell__bd">查看更多</div>
+			<span class="weui-cell__ft"></span>
+		</a>
+	</div>
+</div>
